@@ -17,9 +17,7 @@ app.get('/api/hello', (req, res) => {
 });
 
 const port = process.env.port || 3333;
-app.listen(port, (err) => {
-  if (err) {
-    console.error(err);
-  }
-  console.log(`Listening at http://localhost:${port}`);
+const server = app.listen(port, () => {
+  console.log(`Listening at http://localhost:${port}/api`);
 });
+server.on('error', console.error);
