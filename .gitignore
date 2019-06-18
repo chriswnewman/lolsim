@@ -2,10 +2,14 @@
 
 # data tarballs
 /lol-data-tar
+/apps/lolsim-api/src/assets/ddragon
+
+# env
+.env
 
 # compiled output
 /dist
-/tmp
+**/tmp
 /out-tsc
 
 # dependencies
