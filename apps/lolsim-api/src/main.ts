@@ -25,7 +25,7 @@ async function connect() {
   const port = process.env.PORT || 3333;
   console.log(process.env.PORT);
   try {
-    mongoose.Promise = global.Promise;
+    // mongoose.Promise = global.Promise;
     await mongoose.connect(process.env.MLAB_URL);
   } catch (err) {
     console.log('Mongoose error', err);

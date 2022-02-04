@@ -9,5 +9,6 @@ import { Message } from "@lol/api-interface";
 })
 export class AppComponent {
   hello$ = this.http.get<Message>("/api/hello");
+  test$ = this.http.get<any>("/api/champion");
   constructor(private http: HttpClient) {}
 }
